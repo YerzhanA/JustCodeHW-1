@@ -1,0 +1,174 @@
+.cards-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, minmax(200px, 260px));
+  grid-template-rows: repeat(6, 180px);
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "header header header header"
+    "picture picture picture picture"
+    "picture picture picture picture"
+    "picture picture picture picture"
+    "discription discription discription discription"
+    "discription discription discription discription"
+    "audio audio audio audio"
+    "video video video video"
+    "video video video video"
+    "video video video video"
+    "video video video video"
+    "video video video video"
+    "footer footer footer footer"
+    "footer footer footer footer"
+    "footer footer footer footer";
+}
+.header {
+  grid-area: header;
+  background-color: black;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/*picture*/
+.picture {
+  grid-area: picture;
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+img {
+  width: 700px;
+  height: 500px;
+}
+/*Text*/
+.discription {
+  grid-area: discription;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text {
+  margin: 0 auto;
+  text-align: center; /*выравнивание текста по середине*/
+  line-height: 25px; /* расстояние между строк*/
+  letter-spacing: 2px;
+}
+/*audio*/
+.audio {
+  grid-area: audio;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+button {
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: #556b2f;
+}
+/*video*/
+.video {
+  grid-area: video;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-video {
+  width: 700px;
+  height: 500px;
+  box-shadow: 0 0 20px 10px grey;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.footer {
+  grid-area: footer;
+
+  background-color: black;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text {
+  color: white;
+}
+@media (max-width: 889px) {
+  .cards-grid {
+    grid-template-columns: repeat(1, minmax(180px, 260px));
+    grid-template-rows: repeat(6, 180px);
+    grid-auto-rows: 100px;
+    grid-template-areas:
+      "header header"
+      "picture picture"
+      "picture picture"
+      "discription discription"
+      "discription discription"
+      "discription discription"
+      "discription discription"
+      "audio audio"
+      "video video"
+      "video video"
+      "video video"
+      "video video"
+      "footer footer"
+      "footer footer"
+      "footer footer";
+  }
+  img {
+    width: 500px;
+    height: 300px;
+  }
+  button {
+    border-radius: 30px;
+    width: 70px;
+    height: 70px;
+    background-color: #556b2f;
+  }
+  .content-video {
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 20px 10px grey;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 409px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-rows: repeat(1, 140px);
+    grid-template-areas:
+      "header"
+      "picture"
+      "picture"
+      "picture"
+      "picture"
+      "picture"
+      "discription"
+      "discription"
+      "discription"
+      "discription"
+      "discription"
+      "discription"
+      "audio"
+      "video"
+      "video"
+      "video"
+      "footer"
+      "footer"
+      "footer";
+  }
+}

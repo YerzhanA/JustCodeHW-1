@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cards-grid">
+      <div class="card-demo header"><h1>Ходячие мертвецы</h1></div>
+      <div class="card-demo picture">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=0879d0cce9cd46ce2f675950d9ab1f638bb0e7d4-7946262-images-thumbs&n=13&exp=1"
+          alt=""
+        />
+      </div>
+      <div class="card-demo discription">
+        <p class="main-text">
+          Офицер Рик Граймс ранен в перестрелке и впадает в месячную кому.
+          Очнувшись в пустой больнице (что это, клиника для ветеранов?), он
+          бродит по коридорам в поисках медсестры, врача, кого угодно. Вместо
+          этого он находит полчища зомби - гниющие трупы, шатающиеся по округе в
+          отчаянном поиске живых людей, чтобы полакомиться ими. Рик вынужден
+          бежать от ходячих мертвецов (понятно?) и находит дорогу домой, но его
+          жены и сына там нет. Бродя по окрестностям, Рик получает удар лопатой
+          по голове от малыша Дуэйна, сына человека по имени Морган Джонс. Малыш
+          Дуэйн решил, что Рик - зомби. Лучше перестраховаться. Морган решает
+          накормить голодного Рика ужином и рассказывает ему об происходящей
+          ситуации: зомби, много смертей, и вокруг одна паника. Это апокалипсис,
+          только с зомби. Морган рассказывает, что множество выживших убежали в
+          Атланту, и Рик принимает решение узнать, находятся ли там Лори и Карл,
+          его супруга и сын. Они отправляются в участок полиции, где Рик
+          собирает оружие и машину, и Рик отправляется в Атланту. В автомобиле
+          заканчивается горючее, так что он решает найти лошадь и сарай и скачет
+          в Хотланту, как настоящий Одинокий Рейнджер. Все, даже истинные
+          домохозяйки Атланты, теперь стали зомбаками. Лошадку Рика пожирают
+          ходячие мертвецы. (Мертвые едят лошадей - кто бы мог подумать?) Рика
+          также чуть не загрызли, но парнишка в кепке по имени Гленн находит
+          Рика и выводит его из города.
+        </p>
+      </div>
+      <div class="card-demo audio">
+        <audio autoplay id="player" src="treiler.mp3">
+          Your browser does not support the HTML5 Audio element.
+        </audio>
+        <div>
+          <button onclick="document.getElementById('player').play()">
+            Play
+          </button>
+          <button onclick="document.getElementById('player').pause()">
+            Pause
+          </button>
+          <button onclick="document.getElementById('player').volume += 0.1">
+            Vol +
+          </button>
+          <button onclick="document.getElementById('player').volume -= 0.1">
+            Vol -
+          </button>
+        </div>
+      </div>
+      <div class="card-demo video">
+        <iframe
+          class="content-video"
+          src="https://www.youtube.com/embed/WPeIC0WWRWA"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="card-demo footer">
+        <p class="footer-text">
+          Жанр сериала: ужасы, триллер, драма <br /><br />Страна: США
+          <br /><br />Режиссер: Грег Никотеро, Майкл Е. Сатраземис, Дэвид Бойд,
+          Эрнест Р. Дикерсон <br /><br />В ролях актеры: Норман Ридус, Мелисса
+          Сюзанн МакБрайд, <br />Лорен Кохэн, Кристиан Серратос, <br />Джош
+          Макдермитт, Данай Гурира, <br />Сет Гиллиам, Эндрю Линкольн,
+          <br />Росс Маркванд, Чендлер Риггз и другие
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
